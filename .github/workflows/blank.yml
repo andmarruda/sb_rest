@@ -7,9 +7,10 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
-    uses: wlixcc/SFTP-Deploy-Action@v1.2.4
     steps:
-      - name: deploy
+      - 
+        name: deploy
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
           username: 'usuario'
           server: 'ip_servidor'
