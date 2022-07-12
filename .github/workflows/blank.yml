@@ -9,11 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     uses: wlixcc/SFTP-Deploy-Action@v1.2.4
     steps:
-      name: deploy
-      with:
-        username: 'usuario'
-        server: 'ip_servidor'
-        ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
-        local_pash: 'caminho_repositorio'
-        remote_path: '/caminho/servidor'
-        sftpArgs: '-o ConnectTimeout=20'
+      - name: deploy
+        with:
+          username: 'usuario'
+          server: 'ip_servidor'
+          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          local_pash: 'caminho_repositorio'
+          remote_path: '/caminho/servidor'
+          sftpArgs: '-o ConnectTimeout=20'
